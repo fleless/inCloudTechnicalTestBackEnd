@@ -5,11 +5,13 @@ const connection = mysql.createConnection({
     password: '',
     database: 'incloud'
 });
-connection.connect(function (error) {
-    if (!!error) {
-        console.log('not connected');
-    } else {
-        console.log('connected');
-    }
-});
+setTimeout(function() {
+    connection.connect(function (error) {
+        if (!!error) {
+            console.log('not connected');
+        } else {
+            console.log('connected');
+        }
+    });
+}, 30000)
 module.exports = connection;
