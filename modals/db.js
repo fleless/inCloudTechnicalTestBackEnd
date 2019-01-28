@@ -1,6 +1,6 @@
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-    host: 'localhost',
+    host: 'mysql3',
     user: 'root',
     password: '',
     database: 'incloud'
