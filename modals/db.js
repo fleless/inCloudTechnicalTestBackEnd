@@ -9,6 +9,7 @@ setTimeout(function() {
     connection.connect(function (error) {
         if (!!error) {
             console.log('not connected');
+            process.exit(1);
         } else {
             console.log('connected');
         }
